@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arroz con leche</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #fff9f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: #b03a3a;
+      margin-bottom: 2rem;
+    }
+
+    .contenedor-receta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .imagen-receta {
+      flex: 1 1 30%;
+      max-width: 30%;
+    }
+
+    .imagen-receta img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .ingredientes {
+      flex: 1 1 65%;
+    }
+
+    .ingredientes h2 {
+      font-size: 2.2rem;
+      color: #b03a3a;
+      margin-bottom: 1rem;
+    }
+
+    .ingredientes ul {
+      padding-left: 1.5rem;
+      font-size: 1.25rem;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 768px) {
+      .contenedor-receta {
+        flex-direction: column;
+      }
+
+      .imagen-receta, .ingredientes {
+        max-width: 100%;
+        flex: 1 1 100%;
+      }
+    }
+
+    .preparacion {
+  margin-top: 3rem;
+}
+
+.preparacion h2 {
+  font-size: 2.2rem;
+  color: #b03a3a;
+  margin-bottom: 1rem;
+}
+
+.preparacion ol {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding-left: 1.5rem;
+}
+
+.preparacion li {
+  margin-bottom: 1rem;
+}
+
+.boton-volver {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.boton-volver a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffcaca;
+  color: #b03a3a;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-volver a:hover {
+  background-color: #f9b3b3;
+  transform: translateY(-2px);
+}
+
+
+    
+  </style>
+</head>
+<body>
+
+  <h1>Arroz con leche</h1>
+
+  <div class="contenedor-receta">
+    <div class="imagen-receta">
+      <img src="../img/arroz-leche.jpg" alt="Arroz con leche">
+    </div>
+    <div class="ingredientes">
+      <h2>Ingredientes (para 4-6 porciones):</h2>
+      <ul>
+        <li>1 taza de arroz blanco (preferiblemente de grano corto o medio)</li>
+        <li>1 litro de leche entera</li>
+        <li>1 taza de agua</li>
+        <li>1 rama de canela</li>
+        <li>1 trocito de cáscara de limón (sin lo blanco, que amarga)</li>
+        <li>1 taza de azúcar (puedes ajustar al gusto)</li>
+        <li>1 pizca de sal</li>
+        <li>Opcional: 1/2 taza de leche condensada (para extra cremosidad)</li>
+        <li>Opcional: pasas (si te gustan)</li>
+        <li>Canela en polvo para espolvorear al final</li>
+      </ul>
+    </div>
+
+    <div class="preparacion">
+      <h2>Preparación:</h2>
+      <ol>
+        <li>Enjuaga el arroz con agua fría para quitarle el exceso de almidón.</li>
+        <li>En una olla grande, coloca el arroz con el agua, la canela en rama y la cáscara de limón.</li>
+        <li>Cocina a fuego medio hasta que el arroz haya absorbido casi toda el agua (unos 10-15 minutos).</li>
+        <li>Agrega la leche, la pizca de sal, y si vas a usar leche condensada, añádela también. Remueve bien.</li>
+        <li>Cocina a fuego bajo, removiendo constantemente para que no se pegue ni se forme nata.</li>
+        <li>Cuando el arroz esté suave y la mezcla espese (unos 25-30 minutos), añade el azúcar y las pasas si deseas.</li>
+        <li>Sigue cocinando y removiendo unos 10 minutos más hasta que tenga la textura cremosa que te guste.</li>
+        <li>Retira del fuego, quita la canela y el limón.</li>
+        <li>Sirve caliente o frío, según prefieras, y espolvorea con canela en polvo antes de servir.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="boton-volver">
+    <a href="../index.html">← Volver a la página principal</a>
+  </div>
+
+</body>
+</html>
+

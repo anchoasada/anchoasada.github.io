@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fabada Asturiana</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #fff9f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: #b03a3a;
+      margin-bottom: 2rem;
+    }
+
+    .contenedor-receta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .imagen-receta {
+      flex: 1 1 30%;
+      max-width: 30%;
+    }
+
+    .imagen-receta img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .ingredientes {
+      flex: 1 1 65%;
+    }
+
+    .ingredientes h2 {
+      font-size: 2.2rem;
+      color: #b03a3a;
+      margin-bottom: 1rem;
+    }
+
+    .ingredientes ul {
+      padding-left: 1.5rem;
+      font-size: 1.25rem;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 768px) {
+      .contenedor-receta {
+        flex-direction: column;
+      }
+
+      .imagen-receta, .ingredientes {
+        max-width: 100%;
+        flex: 1 1 100%;
+      }
+    }
+
+    .preparacion {
+  margin-top: 3rem;
+}
+
+.preparacion h2 {
+  font-size: 2.2rem;
+  color: #b03a3a;
+  margin-bottom: 1rem;
+}
+
+.preparacion ol {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding-left: 1.5rem;
+}
+
+.preparacion li {
+  margin-bottom: 1rem;
+}
+
+.boton-volver {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.boton-volver a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffcaca;
+  color: #b03a3a;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-volver a:hover {
+  background-color: #f9b3b3;
+  transform: translateY(-2px);
+}
+
+
+    
+  </style>
+</head>
+<body>
+
+  <h1>Fabada Asturiana</h1>
+
+  <div class="contenedor-receta">
+    <div class="imagen-receta">
+      <img src="../img/fabada-asturiana.jpg" alt="Fabada Asturiana">
+    </div>
+    <div class="ingredientes">
+      <h2>Ingredientes:</h2>
+      <ul>
+        <li>100 g de fabes (alubias blancas secas, tipo asturiano)</li>
+        <li>1/2 chorizo asturiano</li>
+        <li>1/2 morcilla asturiana</li>
+        <li>1 trocito de panceta curada (unos 30-40 g)</li>
+        <li>(Opcional) Un pedacito de lacón o tocino salado</li>
+        <li>1/4 de cebolla (opcional, entera)</li>
+        <li>1 diente de ajo (entero, sin pelar si quieres retirarlo luego)</li>
+        <li>1 hoja de laurel</li>
+        <li>Hebras de azafrán o una pizca de pimentón dulce</li>
+        <li>Sal al gusto</li>
+        <li>Agua (lo suficiente para cubrir las fabes 2-3 dedos por encima)</li>
+      </ul>
+    </div>
+
+    <div class="preparacion">
+      <h2>Preparación:</h2>
+      <ol>
+        <li>Escurre las fabes remojadas y ponlas en una olla pequeña.</li>
+        <li>Añade el chorizo, la morcilla, la panceta, el ajo y la hoja de laurel. Si usas cebolla, agrégala entera (se retira al final).</li>
+        <li>Cubre con agua fría unos 2-3 dedos por encima y lleva a fuego medio.</li>
+        <li>Cuando empiece a hervir, espuma la superficie (quita la espuma blanca) y baja el fuego al mínimo para que cuezan suavemente.</li>
+        <li>Asústalas: durante la cocción, añade un chorrito de agua fría 2 o 3 veces cuando rompa el hervor. Esto ayuda a que las fabes no se rompan.</li>
+        <li>Cocina a fuego lento unas 2 a 3 horas, o hasta que las fabes estén tiernas y cremosas. (Si usas olla exprés: unos 35-40 minutos).</li>
+        <li>Cuando estén tiernas, añade la sal (nunca antes), y si quieres, una pizca de pimentón o azafrán para dar color y aroma.</li>
+        <li>Retira el ajo, la cebolla (si la pusiste), y sirve bien calentita con el compango cortado en trozos.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="boton-volver">
+    <a href="../index.html">← Volver a la página principal</a>
+  </div>
+
+</body>
+</html>
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patatas Bravas</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #fff9f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: #b03a3a;
+      margin-bottom: 2rem;
+    }
+
+    .contenedor-receta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .imagen-receta {
+      flex: 1 1 30%;
+      max-width: 30%;
+    }
+
+    .imagen-receta img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .ingredientes {
+      flex: 1 1 65%;
+    }
+
+    .ingredientes h2 {
+      font-size: 2.2rem;
+      color: #b03a3a;
+      margin-bottom: 1rem;
+    }
+
+    .ingredientes ul {
+      padding-left: 1.5rem;
+      font-size: 1.25rem;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 768px) {
+      .contenedor-receta {
+        flex-direction: column;
+      }
+
+      .imagen-receta, .ingredientes {
+        max-width: 100%;
+        flex: 1 1 100%;
+      }
+    }
+
+    .preparacion {
+  margin-top: 3rem;
+}
+
+.preparacion h2 {
+  font-size: 2.2rem;
+  color: #b03a3a;
+  margin-bottom: 1rem;
+}
+
+.preparacion ol {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding-left: 1.5rem;
+}
+
+.preparacion li {
+  margin-bottom: 1rem;
+}
+
+.boton-volver {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.boton-volver a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffcaca;
+  color: #b03a3a;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-volver a:hover {
+  background-color: #f9b3b3;
+  transform: translateY(-2px);
+}
+
+
+    
+  </style>
+</head>
+<body>
+
+  <h1>Patatas Bravas</h1>
+
+  <div class="contenedor-receta">
+    <div class="imagen-receta">
+      <img src="../img/patatas-bravas.jpg" alt="Patatas Bravas">
+    </div>
+    <div class="ingredientes">
+      <h2>Ingredientes:</h2>
+      <ul>
+        <li>1 patata grande (o 2 pequeñas)</li>
+        <li>Aceite para freír (de oliva o girasol)</li>
+        <li>Sal</li>
+        <li>1 cucharadita de pimentón dulce</li>
+        <li>1/2 cucharadita de pimentón picante (o cayena molida si quieres más fuego)</li>
+        <li>1/2 cucharada de harina</li>
+        <li>100 ml de caldo de ave o agua</li>
+        <li>1/2 diente de ajo (muy picadito)</li>
+        <li>1 cucharada de aceite de oliva</li>
+        <li>Sal al gusto</li>
+        <li>(Opcional) Un chorrito de vinagre para dar alegría</li>
+        <li>Alioli casero o de bote, si te va la versión “mixta” con brava + alioli</li>
+      </ul>
+    </div>
+
+    <div class="preparacion">
+      <h2>Preparación:</h2>
+      <ol>
+        <li>Pela y corta las patatas en cubos medianos (no muy pequeños).</li>
+        <li>Lávalas bien bajo el grifo y sécalas a conciencia con un paño o papel de cocina.</li>
+        <li>Fríelas primero a fuego medio (130-140°C) unos 8-10 minutos para que se hagan por dentro. Luego sube el fuego a tope para que queden doradas y crujientes por fuera.</li>
+        <li>Escúrrelas sobre papel absorbente y échales sal.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="boton-volver">
+    <a href="../index.html">← Volver a la página principal</a>
+  </div>
+
+</body>
+</html>
+

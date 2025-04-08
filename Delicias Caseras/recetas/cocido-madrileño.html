@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cocido Madrileño</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #fff9f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: #b03a3a;
+      margin-bottom: 2rem;
+    }
+
+    .contenedor-receta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .imagen-receta {
+      flex: 1 1 30%;
+      max-width: 30%;
+    }
+
+    .imagen-receta img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .ingredientes {
+      flex: 1 1 65%;
+    }
+
+    .ingredientes h2 {
+      font-size: 2.2rem;
+      color: #b03a3a;
+      margin-bottom: 1rem;
+    }
+
+    .ingredientes ul {
+      padding-left: 1.5rem;
+      font-size: 1.25rem;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 768px) {
+      .contenedor-receta {
+        flex-direction: column;
+      }
+
+      .imagen-receta, .ingredientes {
+        max-width: 100%;
+        flex: 1 1 100%;
+      }
+    }
+
+    .preparacion {
+  margin-top: 3rem;
+}
+
+.preparacion h2 {
+  font-size: 2.2rem;
+  color: #b03a3a;
+  margin-bottom: 1rem;
+}
+
+.preparacion ol {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding-left: 1.5rem;
+}
+
+.preparacion li {
+  margin-bottom: 1rem;
+}
+
+.boton-volver {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.boton-volver a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffcaca;
+  color: #b03a3a;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-volver a:hover {
+  background-color: #f9b3b3;
+  transform: translateY(-2px);
+}
+
+
+    
+  </style>
+</head>
+<body>
+
+  <h1>Cocido Madrileño</h1>
+
+  <div class="contenedor-receta">
+    <div class="imagen-receta">
+      <img src="../img/cocido-madrileño.jpg" alt="Cocido Madrileño">
+    </div>
+    <div class="ingredientes">
+      <h2>Ingredientes:</h2>
+      <ul>
+        <li>80-100 g de morcillo de ternera</li>
+        <li>1 huesito pequeño de jamón</li>
+        <li>1 trozo pequeño de tocino salado (30-40 g)</li>
+        <li>1 alita o muslito de pollo o gallina</li>
+        <li>1/2 chorizo de guisar (o 1 pequeño)</li>
+        <li>1 trocito de morcilla (opcional, unos 30 g)</li>
+        <li>75 g de garbanzos secos (en remojo desde la noche anterior)</li>
+        <li>1 zanahoria pequeña</li>
+        <li>1 patata pequeña (entera, pelada)</li>
+        <li>Unas hojas de repollo o col</li>
+        <li>250 ml del caldo del cocido</li>
+        <li>Un puñadito de fideos finos (unos 30-40 g)</li>
+      </ul>
+    </div>
+
+    <div class="preparacion">
+      <h2>Preparación:</h2>
+      <ol>
+        <li>La noche anterior, pon los garbanzos en remojo en agua templada con un poco de sal.</li>
+        <li>En una olla mediana, añade: El morcillo, el hueso de jamón, el tocino, el pollo y los garbanzos escurridos.</li>
+        <li>Cubre con agua (aprox. 1 litro). Lleva a ebullición, desespuma bien, y luego baja el fuego.</li>
+        <li>Añade la zanahoria pelada entera, y deja cocer todo a fuego lento por 2 horas (o unos 45 min si usas olla rápida).</li>
+        <li>A mitad de cocción (pasados unos 60 minutos), añade el chorizo, la patata y la morcilla (si la usas). Cocina hasta que todo esté tierno.</li>
+        <li>Mientras tanto, cuece el repollo en otra olla con agua y sal, luego saltéalo con un ajo picado y un chorrito de aceite de oliva.</li>
+        <li>Cuando todo esté listo, cuela parte del caldo (unos 250 ml) y en él cocina los fideos unos 5-7 minutos.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="boton-volver">
+    <a href="../index.html">← Volver a la página principal</a>
+  </div>
+
+</body>
+</html>
+

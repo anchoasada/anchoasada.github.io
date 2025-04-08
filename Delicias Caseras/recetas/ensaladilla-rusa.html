@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ensaladilla Rusa</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #fff9f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: #b03a3a;
+      margin-bottom: 2rem;
+    }
+
+    .contenedor-receta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .imagen-receta {
+      flex: 1 1 30%;
+      max-width: 30%;
+    }
+
+    .imagen-receta img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .ingredientes {
+      flex: 1 1 65%;
+    }
+
+    .ingredientes h2 {
+      font-size: 2.2rem;
+      color: #b03a3a;
+      margin-bottom: 1rem;
+    }
+
+    .ingredientes ul {
+      padding-left: 1.5rem;
+      font-size: 1.25rem;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 768px) {
+      .contenedor-receta {
+        flex-direction: column;
+      }
+
+      .imagen-receta, .ingredientes {
+        max-width: 100%;
+        flex: 1 1 100%;
+      }
+    }
+
+    .preparacion {
+  margin-top: 3rem;
+}
+
+.preparacion h2 {
+  font-size: 2.2rem;
+  color: #b03a3a;
+  margin-bottom: 1rem;
+}
+
+.preparacion ol {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding-left: 1.5rem;
+}
+
+.preparacion li {
+  margin-bottom: 1rem;
+}
+
+.boton-volver {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.boton-volver a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffcaca;
+  color: #b03a3a;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-volver a:hover {
+  background-color: #f9b3b3;
+  transform: translateY(-2px);
+}
+
+
+    
+  </style>
+</head>
+<body>
+
+  <h1>Ensaladilla Rusa</h1>
+
+  <div class="contenedor-receta">
+    <div class="imagen-receta">
+      <img src="../img/ensaladilla-rusa.jpg" alt="Ensaladilla Rusa">
+    </div>
+    <div class="ingredientes">
+      <h2>Ingredientes:</h2>
+      <ul>
+        <li>1 patata mediana</li>
+        <li>1 zanahoria pequeña</li>
+        <li>1 huevo (cocido)</li>
+        <li>1/2 lata de atún (en aceite o al natural, al gusto)</li>
+        <li>2-3 aceitunas verdes (en rodajas o picadas)</li>
+        <li>2 cucharadas de guisantes (pueden ser congelados o de bote)</li>
+        <li>(Opcional) 1 o 2 tiras de pimiento morrón (para decorar)</li>
+        <li>Sal al gusto</li>
+        <li>2-3 cucharadas de mayonesa (puede ser casera o de bote, según prefieras)</li>
+      </ul>
+    </div>
+
+    <div class="preparacion">
+      <h2>Preparación:</h2>
+      <ol>
+        <li>Pela la patata y la zanahoria, córtalas en cubitos pequeños.</li>
+        <li>Hierve ambas en agua con sal durante unos 12-15 minutos (la patata debe estar tierna pero no deshecha). Añade los guisantes en los últimos 4-5 minutos si son congelados.</li>
+        <li>En otro cazo, cuece el huevo (10 minutos desde que el agua empiece a hervir). Luego enfría y pélalo.</li>
+        <li>Cuando las verduras estén listas, escúrrelas bien y déjalas enfriar completamente.</li>
+        <li>Desmenuza el atún, pica el huevo cocido (reserva una rodajita para decorar si quieres), las aceitunas y mézclalo todo con las verduras.</li>
+        <li>Añade la mayonesa y mezcla suavemente. Ajusta de sal si hace falta.</li>
+        <li>Sirve fresquita, decorada con huevo duro, pimiento morrón o unas aceitunas por encima si quieres que luzca</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="boton-volver">
+    <a href="../index.html">← Volver a la página principal</a>
+  </div>
+
+</body>
+</html>
+
