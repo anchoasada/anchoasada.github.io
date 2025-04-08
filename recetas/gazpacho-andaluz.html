@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gazpacho Andaluz</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #fff9f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: #b03a3a;
+      margin-bottom: 2rem;
+    }
+
+    .contenedor-receta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .imagen-receta {
+      flex: 1 1 30%;
+      max-width: 30%;
+    }
+
+    .imagen-receta img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .ingredientes {
+      flex: 1 1 65%;
+    }
+
+    .ingredientes h2 {
+      font-size: 2.2rem;
+      color: #b03a3a;
+      margin-bottom: 1rem;
+    }
+
+    .ingredientes ul {
+      padding-left: 1.5rem;
+      font-size: 1.25rem;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 768px) {
+      .contenedor-receta {
+        flex-direction: column;
+      }
+
+      .imagen-receta, .ingredientes {
+        max-width: 100%;
+        flex: 1 1 100%;
+      }
+    }
+
+    .preparacion {
+  margin-top: 3rem;
+}
+
+.preparacion h2 {
+  font-size: 2.2rem;
+  color: #b03a3a;
+  margin-bottom: 1rem;
+}
+
+.preparacion ol {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding-left: 1.5rem;
+}
+
+.preparacion li {
+  margin-bottom: 1rem;
+}
+
+.boton-volver {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.boton-volver a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffcaca;
+  color: #b03a3a;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-volver a:hover {
+  background-color: #f9b3b3;
+  transform: translateY(-2px);
+}
+
+
+    
+  </style>
+</head>
+<body>
+
+  <h1>Gazpacho Andaluz</h1>
+
+  <div class="contenedor-receta">
+    <div class="imagen-receta">
+      <img src="../img/gazpacho-andaluz.jpg" alt="Gazpacho Andaluz">
+    </div>
+    <div class="ingredientes">
+      <h2>Ingredientes:</h2>
+      <ul>
+        <li>2 tomates medianos maduros (unos 250 g)</li>
+        <li>1/4 de pepino (pelado si quieres que sea más suave)</li>
+        <li>1/4 de pimiento verde (tipo italiano)</li>
+        <li>1/8 de cebolla (muy poquita, que no mate el resto)</li>
+        <li>1/2 diente de ajo pequeño (sin el germen para que no repita)</li>
+        <li>2 cucharadas de aceite de oliva virgen extra</li>
+        <li>1 cucharada de vinagre de vino blanco o de Jerez (ajusta a gusto)</li>
+        <li>Sal al gusto (aprox. 1/4 de cucharadita)</li>
+        <li>Un chorrito de agua fría (50-100 ml, según la textura que quieras)</li>
+        <li>1 trocito pequeño de pan del día anterior (sin corteza, remojado en agua) — para espesar y dar más cuerpo</li>
+      </ul>
+    </div>
+
+    <div class="preparacion">
+      <h2>Preparación:</h2>
+      <ol>
+        <li>Lava y trocea los tomates, el pepino, el pimiento y la cebolla. Pela el ajo y quítale el germen.</li>
+        <li>Si usas pan, remójalo en un poco de agua.</li>
+        <li>En el vaso de la batidora o licuadora, añade: las verduras, el pan remojado (si lo usas), el aceite, el vinagre y la sal.</li>
+        <li>Tritura todo bien hasta obtener una crema fina y homogénea. Añade el agua fría poco a poco hasta conseguir la textura que prefieras (más líquida o más espesa).</li>
+        <li>Cuela el gazpacho con un colador fino si quieres una textura más fina (opcional, pero recomendable).</li>
+        <li>Guarda en la nevera al menos 30 minutos para que esté bien frío. El sabor mejora mucho con el reposo.</li>
+        <li>Sirve bien fresquito, solo o con trocitos de verdura (pepino, tomate, cebolla, pimiento) como topping, o con unos picatostes de pan.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="boton-volver">
+    <a href="../index.html">← Volver a la página principal</a>
+  </div>
+
+</body>
+</html>
+

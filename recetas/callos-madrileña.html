@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Callos a la madrileña</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #fff9f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: #b03a3a;
+      margin-bottom: 2rem;
+    }
+
+    .contenedor-receta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .imagen-receta {
+      flex: 1 1 30%;
+      max-width: 30%;
+    }
+
+    .imagen-receta img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .ingredientes {
+      flex: 1 1 65%;
+    }
+
+    .ingredientes h2 {
+      font-size: 2.2rem;
+      color: #b03a3a;
+      margin-bottom: 1rem;
+    }
+
+    .ingredientes ul {
+      padding-left: 1.5rem;
+      font-size: 1.25rem;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 768px) {
+      .contenedor-receta {
+        flex-direction: column;
+      }
+
+      .imagen-receta, .ingredientes {
+        max-width: 100%;
+        flex: 1 1 100%;
+      }
+    }
+
+    .preparacion {
+  margin-top: 3rem;
+}
+
+.preparacion h2 {
+  font-size: 2.2rem;
+  color: #b03a3a;
+  margin-bottom: 1rem;
+}
+
+.preparacion ol {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding-left: 1.5rem;
+}
+
+.preparacion li {
+  margin-bottom: 1rem;
+}
+
+.boton-volver {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.boton-volver a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffcaca;
+  color: #b03a3a;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-volver a:hover {
+  background-color: #f9b3b3;
+  transform: translateY(-2px);
+}
+
+
+    
+  </style>
+</head>
+<body>
+
+  <h1>Callos a la madrileña</h1>
+
+  <div class="contenedor-receta">
+    <div class="imagen-receta">
+      <img src="../img/callos-madrileña.jpg" alt="Callos a la madrileña">
+    </div>
+    <div class="ingredientes">
+      <h2>Ingredientes (para 4-6 personas):</h2>
+      <ul>
+        <li>1 kg de callos de ternera (limpios y troceados)</li>
+        <li>200 g de morro o pata de ternera (opcional, pero da una gelatina espectacular)</li>
+        <li>150 g de chorizo (en rodajas gruesas)</li>
+        <li>150 g de morcilla (también en rodajas, idealmente de cebolla o arroz)</li>
+        <li>1 trozo de jamón serrano o panceta curada (opcional, cortado en taquitos)</li>
+        <li>1 cebolla grande</li>
+        <li>2 dientes de ajo</li>
+        <li>1 hoja de laurel</li>
+        <li>1 cucharadita de pimentón dulce (y un toque picante si te gusta)</li>
+        <li>1 cucharada de harina (opcional, para espesar un poco)</li>
+        <li>Sal y pimienta al gusto</li>
+        <li>Aceite de oliva virgen extra</li>
+        <li>Guindilla seca o cayena (opcional, para darle ese toque picantito)</li>
+        <li>Agua o caldo de carne</li>
+        <li>(Opcional) Garbanzos cocidos — en algunas versiones más modernas</li>
+      </ul>
+    </div>
+
+    <div class="preparacion">
+      <h2>Preparación:</h2>
+      <ol>
+        <li>Limpieza previa: aunque ya vengan limpios, es recomendable lavar los callos y el morro con agua, un chorrito de vinagre y sal, dejarlos en remojo un rato y luego enjuagar bien.</li>
+        <li>En una olla grande, cocer los callos y el morro cubiertos de agua con un poco de sal y una hoja de laurel. Cocinar durante unas 2 a 3 horas a fuego lento (o 45 min en olla a presión) hasta que estén muy tiernos. Retira la espuma que suba al principio.</li>
+        <li>Mientras se cuecen, en una sartén con aceite de oliva, rehoga la cebolla picada y los ajos hasta que estén doraditos.</li>
+        <li>Añade el pimentón, la guindilla si vas a usar, y la cucharada de harina si te gusta más espeso. Cocina unos segundos removiendo para que no se queme.</li>
+        <li>Añade el chorizo, la morcilla y el jamón, sofríe unos minutos para que suelten todo su sabor.</li>
+        <li>Una vez los callos estén tiernos, añade el sofrito a la olla, mezcla bien y deja cocer todo junto unos 30-40 minutos más a fuego muy bajo, removiendo de vez en cuando.</li>
+        <li>Rectifica de sal y pimienta, y si quieres, añade un puñado de garbanzos cocidos en los últimos 10 minutos.</li>
+        <li>Reposo clave: Este plato está aún mejor al día siguiente, cuando los sabores se asientan. ¡Mágico!</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="boton-volver">
+    <a href="../index.html">← Volver a la página principal</a>
+  </div>
+
+</body>
+</html>
+
