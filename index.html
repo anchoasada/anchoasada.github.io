@@ -5,205 +5,190 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Delicias Caseras</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
 
-    header {
-      background-color: #f76c6c;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
+  header {
+    background-color: #f76c6c;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
 
-    nav {
-      background-color: #ff9999;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      padding: 1rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      flex-wrap: wrap;
-    }
+  nav {
+    background-color: #ff9999;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap;
+  }
 
-    nav button {
-      background-color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
+  nav button {
+    background-color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
 
-    nav button:hover {
-      background-color: #ffe5e5;
-    }
+  nav button:hover {
+    background-color: #ffe5e5;
+  }
 
-    section {
-      padding: 2rem;
-      display: none;
-    }
+  section {
+    padding: 2rem;
+    display: none;
+  }
 
-    section.active {
-      display: block;
-    }
+  section.active {
+    display: block;
+  }
 
-    .receta, .receta-destacada {
-      cursor: pointer;
-      padding: 1rem;
-      margin: 1rem 0;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      text-align: center;
-      transition: background-color 0.3s;
-    }
+  .receta, .receta-destacada {
+    cursor: pointer;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
 
-    .receta:hover, .receta-destacada:hover {
-      background-color: #f9f9f9;
-    }
+  .receta:hover, .receta-destacada:hover {
+    background-color: #f9f9f9;
+  }
 
-    .receta-destacada {
-      background-color: #fff4f4;
-      display: inline-block;
-      width: auto;
-      margin-right: 10px;
-    }
+  .receta-destacada {
+    background-color: #fff4f4;
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+  }
 
-    form input, form textarea, form button {
-      display: block;
-      margin: 0.5rem 0;
-      padding: 0.5rem;
-      width: 100%;
-      max-width: 400px;
-    }
+  form input, form textarea, form button {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+  }
 
-   
-    
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 2000; /* encima del nav */
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-}
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 2000; /* encima del nav */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+  }
 
-}
+  .modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+  }
 
-    }
+  .close {
+    color: #aaa;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
 
-    .modal-content {
-      background-color: #fff;
-      padding: 2rem;
-      border: none;
-      border-radius: 10px;
-      width: 90%;
-      max-width: 500px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-      position: relative;
-      animation: fadeIn 0.3s ease-in-out;
-}
+  .close:hover {
+    color: black;
+  }
 
-}
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
 
-    }
+  .recetas-populares-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
 
-    .close {
-      color: #aaa;
-      position: absolute;
-      right: 1rem;
-      top: 1rem;
-      font-size: 28px;
-      font-weight: bold;
-      cursor: pointer;
-    }
+  .receta-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .close:hover {
-      color: black;
-    }
+  .receta-item img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
-}
+  .boton-receta {
+    background-color: #ffcaca;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #b03a3a;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
 
+  .boton-receta:hover {
+    background-color: #f9b3b3;
+    transform: translateY(-2px);
+  }
 
-.recetas-populares-grid {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1.5rem;
-  flex-wrap: wrap;
-}
+  .recetas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+  }
 
-.receta-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .receta {
+    background-color: #ffeaea;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #b03a3a;
+    font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
 
-.receta-item img {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-top: 0.5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+  .receta:hover {
+    background-color: #f9c7c7;
+    transform: translateY(-3px);
+  }
+</style>
 
-.boton-receta {
-  background-color: #ffcaca;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #b03a3a;
-  font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.boton-receta:hover {
-  background-color: #f9b3b3;
-  transform: translateY(-2px);
-}
-
-
-
-    .recetas-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-  padding: 1rem 0;
-}
-
-.receta {
-  background-color: #ffeaea;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #b03a3a;
-  font-weight: bold;
-  transition: transform 0.2s ease, background-color 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.receta:hover {
-  background-color: #f9c7c7;
-  transform: translateY(-3px);
-}
-
-    
-  </style>
 </head>
 <body>
 
